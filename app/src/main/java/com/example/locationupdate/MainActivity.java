@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -49,6 +50,8 @@ public class MainActivity extends Activity implements OnLocationUpdatedListener,
         super.onCreate(bundle);
         setContentView(R.layout.activity_main);
 
+        // Create the test for the New Origin for the Location
+        Toast.makeText(getApplicationContext(),"Toast printed",Toast.LENGTH_SHORT).show();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACTIVITY_RECOGNITION)
                     != PackageManager.PERMISSION_GRANTED) {

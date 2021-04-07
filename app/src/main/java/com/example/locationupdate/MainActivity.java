@@ -50,6 +50,11 @@ public class MainActivity extends Activity implements OnLocationUpdatedListener,
         super.onCreate(bundle);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
+=======
+        // Create the test for the New Origin for the Location
+        Toast.makeText(getApplicationContext(),"Toast printed view",Toast.LENGTH_SHORT).show();
+>>>>>>> baed13b6ec36a368850801e48de0a93345de85f1
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACTIVITY_RECOGNITION)
                     != PackageManager.PERMISSION_GRANTED) {
